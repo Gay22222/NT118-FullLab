@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ImageView để hiển thị ảnh thay đổi khi thực hiện animation -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/android"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textviewFromXML"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="From XML"
+            android:textSize="18dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/textviewFromCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="From Code"
+            android:textSize="18dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <!-- ScrollView để cuộn nội dung -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:padding="10dp">
+
+            <!-- Dòng đầu tiên -->
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonFadeInXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Fade In" />
+                <Button
+                    android:id="@+id/buttonFadeInCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Fade In"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <!-- Dòng thứ hai -->
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonFadeOutXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Fade Out" />
+                <Button
+                    android:id="@+id/buttonFadeOutCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Fade Out"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <!-- Các dòng tương tự cho các animation khác -->
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonRotateXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Rotate" />
+                <Button
+                    android:id="@+id/buttonRotateCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Rotate"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonZoomInXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Zoom In" />
+                <Button
+                    android:id="@+id/buttonZoomInCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Zoom In"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonZoomOutXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Zoom Out" />
+                <Button
+                    android:id="@+id/buttonZoomOutCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Zoom Out"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonMoveXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Move" />
+                <Button
+                    android:id="@+id/buttonMoveCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Move"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonBlinkXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Blink" />
+                <Button
+                    android:id="@+id/buttonBlinkCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Blink"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonSlideUpXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Slide Up" />
+                <Button
+                    android:id="@+id/buttonSlideUpCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Slide Up"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonBounceXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Bounce" />
+                <Button
+                    android:id="@+id/buttonBounceCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Bounce"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/buttonCombineXML"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Combine" />
+                <Button
+                    android:id="@+id/buttonCombineCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#42A5F5"
+                    android:text="Combine"
+                    android:layout_marginLeft="10dp"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>
